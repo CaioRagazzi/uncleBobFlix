@@ -1,75 +1,75 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#6BD1FF",
+      "titulo": "Clean Code",
+      "link": "https://www.youtube.com/watch?v=7EmboKQH8lM",
+      "cor": "#dc1a28",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Clean Coder Blog",
+        "url": "https://blog.cleancoder.com/"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "To see more about Clean Coders: https://cleancoders.com/ Get ready for something very different. This ain't no screen cast.",
+          "url": "https://www.youtube.com/watch?v=2a_ytyt9sf8"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Uncle Bob Martin gives a Laracon US 2018 talk about clean code.",
+          "url": "https://www.youtube.com/watch?v=NeXQEJNWO5w"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "So we’ve heard the message about Clean Code. And we’ve been practicing TDD for some time now. ",
+          "url": "https://www.youtube.com/watch?v=2dKZ-dWaCiU&t=2s"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "How did our industry start, what paths did it take to get to where we are, and where is it going.",
+          "url": "https://www.youtube.com/watch?v=ecIWPzGEbFc&t=1619s"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "Clean Code with Uncle Bob",
+          "url": "https://www.youtube.com/watch?v=8SMOB6k3hkM"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+          "titulo": "Learn Clean Code",
+          "url": "https://www.youtube.com/watch?v=SXkgYZw0evs&t=105s"
         },
         {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+          "titulo": "Robert C. Martin's description of clean code.",
+          "url": "https://www.youtube.com/watch?v=35l-OFlmGWs"
         },
         {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "Robert C  Martin   Clean Code   Functions",
+          "url": "https://www.youtube.com/watch?v=QvrNwfuWbCQ"
         }        
       ]
     },
     {
-      "titulo": "Back End",
+      "titulo": "Clean Architecture",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "Clean Architecture blog",
+        "url": "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
       },
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "Clean Architecture and Design ",
+          "url": "https://www.youtube.com/watch?v=2dKZ-dWaCiU&t=2s"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "The Principles of Clean Architecture ",
+          "url": "https://www.youtube.com/watch?v=o_TH-Y78tt4"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "Robert C Martin - Clean Architecture and Design",
+          "url": "https://www.youtube.com/watch?v=Nsjsiz2A9mg"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+          "titulo": "Robert C Martin - Clean Architecture",
+          "url": "https://www.youtube.com/watch?v=Nltqi7ODZTM"
         }, 
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "Using Clean Architecture for Microservice",
+          "url": "https://www.youtube.com/watch?v=CnailTcJV_U"
         }
       ]
     },

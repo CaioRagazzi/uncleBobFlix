@@ -4,7 +4,7 @@
   }
   
   :root {
-    --primary: #2A7AE4;
+    --primary: #dc1a28;
     --black: #000000;
     --blackLighter: #9E9E9E;
     --grayLight: #F5F5F5;
@@ -28,4 +28,5 @@
     min-height: calc(100vh - var(--bodyPaddingTop));
     display: flex;
     flex-direction: column;
+    background-color: black;
   }
