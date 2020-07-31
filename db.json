@@ -1,16 +1,100 @@
 {
-    "categorias": [
-        {
-            "id": 1,
-            "nome": "Front End",
-            "descricao": "Categoria Teste",
-            "cor": "#6bd1ff"
-        },
-        {
-            "id": 2,
-            "nome": "Back End",
-            "descricao": "Categoria Teste 2",
-            "cor": "#6bd1ff"
-        }
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Clean Code",
+      "descricao": "Clean Code",
+      "cor": "#6bd1ff"
+    },
+    {
+      "id": 2,
+      "titulo": "Back End",
+      "descricao": "Categoria Teste 2",
+      "cor": "#6bd1ff"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "To see more about Clean Coders: https://cleancoders.com/ Get ready for something very different. This ain't no screen cast.",
+      "url": "https://www.youtube.com/watch?v=2a_ytyt9sf8"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Uncle Bob Martin gives a Laracon US 2018 talk about clean code.",
+      "url": "https://www.youtube.com/watch?v=NeXQEJNWO5w"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "So we’ve heard the message about Clean Code. And we’ve been practicing TDD for some time now. ",
+      "url": "https://www.youtube.com/watch?v=2dKZ-dWaCiU&t=2s"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "How did our industry start, what paths did it take to get to where we are, and where is it going.",
+      "url": "https://www.youtube.com/watch?v=ecIWPzGEbFc&t=1619s"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Clean Code with Uncle Bob",
+      "url": "https://www.youtube.com/watch?v=8SMOB6k3hkM"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Learn Clean Code",
+      "url": "https://www.youtube.com/watch?v=SXkgYZw0evs&t=105s"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Robert C. Martin's description of clean code.",
+      "url": "https://www.youtube.com/watch?v=35l-OFlmGWs"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "Robert C  Martin   Clean Code   Functions",
+      "url": "https://www.youtube.com/watch?v=QvrNwfuWbCQ"
+    },
+    {
+      "titulo": "Video Padrão",
+      "url": "https://www.youtube.com/watch?v=-QvEZoPy96g",
+      "categoriaId": 1,
+      "id": 9
+    },
+    {
+      "titulo": "Video Padrão",
+      "url": "https://www.youtube.com/watch?v=-QvEZoPy96g",
+      "categoriaId": 1,
+      "id": 10
+    },
+    {
+      "titulo": "Video Padrão",
+      "url": "https://www.youtube.com/watch?v=-QvEZoPy96g",
+      "categoriaId": {
+        "id": 2,
+        "titulo": "Back End",
+        "descricao": "Categoria Teste 2",
+        "cor": "#6bd1ff"
+      },
+      "id": 11
+    },
+    {
+      "titulo": "Video Padrão",
+      "url": "https://www.youtube.com/watch?v=-QvEZoPy96g",
+      "categoriaId": {
+        "id": 2,
+        "titulo": "Back End",
+        "descricao": "Categoria Teste 2",
+        "cor": "#6bd1ff"
+      },
+      "id": 12
+    }
+  ]
 }
