@@ -15,7 +15,7 @@ function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-    const URL = 'http://localhost:8080/categorias';
+    const URL = window.location.hostname.includes('localhost') ? 'http://localhost:8080/categorias' : 'https://bobflix.herokuapp.com/categorias';
     fetch(URL).then(async (result) => {
       const resp = await result.json();
       setCategorias([...resp]);
