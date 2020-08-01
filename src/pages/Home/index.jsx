@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Menu from '../../components/Menu';
 import Carousel from '../../components/Carousel';
 import BannerMain from '../../components/BannerMain';
 import PageDefault from '../../components/PageDefault';
@@ -11,6 +10,7 @@ function Home() {
   useEffect(() => {
     categoriasRepository.getAllWithVideos()
       .then((catWithVideos) => {
+        console.log(catWithVideos);
         setDadosIniciais(catWithVideos);
       });
   }, []);
@@ -23,11 +23,17 @@ function Home() {
         if (indice === 0) {
           return (
             <div key={categoria.id}>
-              <BannerMain
-                videoTitle={dadosIniciais[0].videos[0].titulo}
-                url={dadosIniciais[0].videos[0].url}
-                videoDescription="Clean Code"
-              />
+              {
+                dadosIniciais[0].videos.length !== 0
+                  ? (
+                    <BannerMain
+                      videoTitle={dadosIniciais[0].videos[0].titulo}
+                      url={dadosIniciais[0].videos[0].url}
+                      videoDescription="Clean Code"
+                    />
+                  )
+                  : null
+              }
               <Carousel ignoreFirstVideo category={dadosIniciais[0]} />
             </div>
           );

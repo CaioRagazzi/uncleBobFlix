@@ -26,7 +26,27 @@ function getAllWithVideos() {
     });
 }
 
+function create(categoria) {
+  console.log(categoria);
+  return fetch(URL_CATEGORIES, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(categoria),
+  })
+    .then(async (response) => {
+      if (response.ok) {
+        const resp = await response.json();
+        return resp;
+      }
+
+      throw new Error('Error fetching data');
+    });
+}
+
 export default {
   getAllWithVideos,
   getAll,
+  create,
 };
