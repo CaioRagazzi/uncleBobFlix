@@ -17,7 +17,6 @@ function getAll() {
 function getAllWithVideos() {
   return fetch(`${URL_CATEGORIES}?_embed=videos`)
     .then(async (response) => {
-      console.log(response);
       if (response.ok) {
         const resp = await response.json();
         return resp;
@@ -28,7 +27,6 @@ function getAllWithVideos() {
 }
 
 function create(categoria) {
-  console.log(categoria);
   return fetch(URL_CATEGORIES, {
     method: 'POST',
     headers: {
