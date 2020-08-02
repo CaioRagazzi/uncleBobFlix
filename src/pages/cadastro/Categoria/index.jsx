@@ -27,7 +27,6 @@ function CadastroCategoria() {
     fetch(URL_TOP)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
-        console.log(resposta);
         setCategorias([
           ...resposta,
         ]);
