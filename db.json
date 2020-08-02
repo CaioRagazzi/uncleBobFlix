@@ -1,24 +1,186 @@
 {
   "categorias": [
     {
-      "id": 1,
-      "titulo": "Clean Code",
-      "descricao": "Clean Code",
-      "cor": "#6bd1ff"
+      "titulo": "Uncle Bob",
+      "descricao": "Videos about uncle bob",
+      "cor": "#ff0000",
+      "id": 1
     },
     {
-      "id": 2,
-      "titulo": "Back End",
-      "descricao": "Categoria Teste 2",
-      "cor": "#6bd1ff"
+      "titulo": "Clean Code",
+      "descricao": "Clean code with uncle bob",
+      "cor": "#ff0095",
+      "id": 2
+    },
+    {
+      "titulo": "Related to Uncle Bob",
+      "descricao": "Videos related to Uncle Bob",
+      "cor": "#11ff00",
+      "id": 3
+    },
+    {
+      "titulo": "All about Uncle Bob",
+      "descricao": "All about Uncle Bob",
+      "cor": "#800080",
+      "id": 4
     }
   ],
   "videos": [
     {
-      "titulo": "3 Ways to Trick Your Brain Into Doing Hard Work",
-      "url": "https://www.youtube.com/watch?v=o22pjf9obA0",
+      "titulo": "Uncle Bob SOLID principles",
+      "url": "https://www.youtube.com/watch?v=zHiWqnTWsn4",
       "categoriaId": 1,
       "id": 1
+    },
+    {
+      "titulo": "Programming 101 with \"Uncle Bob\"",
+      "url": "https://www.youtube.com/watch?v=-1CuAiKdBQs&t=271s",
+      "categoriaId": 1,
+      "id": 2
+    },
+    {
+      "titulo": "Programming 101 with \"Uncle Bob\"",
+      "url": "https://www.youtube.com/watch?v=2a_ytyt9sf8",
+      "categoriaId": 1,
+      "id": 3
+    },
+    {
+      "titulo": "ITkonekt 2019 | Robert C. Martin (Uncle Bob), Clean Architecture and Design",
+      "url": "https://www.youtube.com/watch?v=2dKZ-dWaCiU&t=2s",
+      "categoriaId": 1,
+      "id": 4
+    },
+    {
+      "titulo": "Clean Code - Uncle Bob / Lesson 3",
+      "url": "https://www.youtube.com/watch?v=Qjywrq2gM8o",
+      "categoriaId": 1,
+      "id": 5
+    },
+    {
+      "titulo": "GOTO 2017 • O Juramento do Escriba • Robert \"Uncle Bob\" Martin",
+      "url": "https://www.youtube.com/watch?v=Tng6Fox8EfI",
+      "categoriaId": 1,
+      "id": 6
+    },
+    {
+      "titulo": "Uncle Bob Martin - The Clean Coder",
+      "url": "https://www.youtube.com/watch?v=NeXQEJNWO5w",
+      "categoriaId": 1,
+      "id": 7
+    },
+    {
+      "titulo": "Clean Code - Uncle Bob / Lesson 1",
+      "url": "https://www.youtube.com/watch?v=7EmboKQH8lM",
+      "categoriaId": 2,
+      "id": 8
+    },
+    {
+      "titulo": "FULL EPISODE // Clean Code with Uncle Bob Episode 1",
+      "url": "https://www.youtube.com/watch?v=Wibk0IfjfaI",
+      "categoriaId": 2,
+      "id": 9
+    },
+    {
+      "titulo": "Learn Clean Code",
+      "url": "https://www.youtube.com/watch?v=SXkgYZw0evs&t=106s",
+      "categoriaId": 2,
+      "id": 10
+    },
+    {
+      "titulo": "Clean Code with Uncle Bob",
+      "url": "https://www.youtube.com/watch?v=8SMOB6k3hkM",
+      "categoriaId": 2,
+      "id": 11
+    },
+    {
+      "titulo": "Clean Code - Uncle Bob / Lesson 5",
+      "url": "https://www.youtube.com/watch?v=sn0aFEMVTpA",
+      "categoriaId": 2,
+      "id": 12
+    },
+    {
+      "titulo": "SkillStruct Presents: The Software Development Conversation with Uncle Bob",
+      "url": "https://www.youtube.com/watch?v=Pe6cjVn9fwI",
+      "categoriaId": 3,
+      "id": 13
+    },
+    {
+      "titulo": "Uncle Bob (Robert Martin) is a Fraud!!!",
+      "url": "https://www.youtube.com/watch?v=mb9VPWbrqmE",
+      "categoriaId": 3,
+      "id": 14
+    },
+    {
+      "titulo": "46 Robert C Martin Clean Code III",
+      "url": "https://www.youtube.com/watch?v=QedpQjxBPMA&list=PLlu0CT-JnSasQzGrGzddSczJQQU7295D2",
+      "categoriaId": 3,
+      "id": 15
+    },
+    {
+      "titulo": "Ruby Midwest 2011 - Keynote: Architecture the Lost Years by Robert Martin",
+      "url": "https://www.youtube.com/watch?v=WpkDN78P884",
+      "categoriaId": 3,
+      "id": 16
+    },
+    {
+      "titulo": "Bristol JS - April 2020 - The Future of Programming with Uncle Bob!",
+      "url": "https://www.youtube.com/watch?v=8i1hET_948A",
+      "categoriaId": 3,
+      "id": 17
+    },
+    {
+      "titulo": "The Future of Programming - .NET Oxford - April 2019",
+      "url": "https://www.youtube.com/watch?v=BHnMItX2hEQ",
+      "categoriaId": 3,
+      "id": 18
+    },
+    {
+      "titulo": "Uncle Bob SOLID principles",
+      "url": "https://www.youtube.com/watch?v=zHiWqnTWsn4&t=3s",
+      "categoriaId": 4,
+      "id": 19
+    },
+    {
+      "titulo": "\"Uncle\" Bob Martin - \"The Future of Programming\"",
+      "url": "https://www.youtube.com/watch?v=ecIWPzGEbFc&t=1619s",
+      "categoriaId": 4,
+      "id": 20
+    },
+    {
+      "titulo": "Clean Code - Uncle Bob / Lesson 2",
+      "url": "https://www.youtube.com/watch?v=2a_ytyt9sf8&t=294s",
+      "categoriaId": 4,
+      "id": 21
+    },
+    {
+      "titulo": "Clean Code Book Review | A Handbook of Agile Software Craftsmanship | Ask a Dev",
+      "url": "https://www.youtube.com/watch?v=f5d9zWdUr18",
+      "categoriaId": 4,
+      "id": 22
+    },
+    {
+      "titulo": "Clean Code - Uncle Bob / Lesson 3",
+      "url": "https://www.youtube.com/watch?v=Qjywrq2gM8o",
+      "categoriaId": 4,
+      "id": 23
+    },
+    {
+      "titulo": "The state of programming // Robert 'Uncle Bob' Martin",
+      "url": "https://www.youtube.com/watch?v=PLuF7MJX3YE",
+      "categoriaId": 4,
+      "id": 24
+    },
+    {
+      "titulo": "Jim Coplien and Bob Martin Debate TDD",
+      "url": "https://www.youtube.com/watch?v=KtHQGs3zFAM",
+      "categoriaId": 4,
+      "id": 25
+    },
+    {
+      "titulo": "Uncle Bob on How to Build a Great Software Development Team",
+      "url": "https://www.youtube.com/watch?v=GIyy7x4XqEc",
+      "categoriaId": 4,
+      "id": 26
     }
   ]
 }

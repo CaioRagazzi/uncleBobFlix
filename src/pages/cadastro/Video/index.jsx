@@ -6,8 +6,10 @@ import FormField from '../../../components/FormField';
 import useForm from '../../../hooks/useForm';
 import videosRepository from '../../../repositories/videos';
 import categoriasRepository from '../../../repositories/categorias';
+import SnackBar from '../../../components/SnackBar';
 
 function CadastroVideo() {
+  const [openSnackBar, setOpenSnackBar] = useState(false);
   const [categorias, setcategorias] = useState([]);
   const categoryTitles = categorias.map(({ titulo }) => titulo);
   const history = useHistory();
@@ -31,6 +33,12 @@ function CadastroVideo() {
         event.preventDefault();
 
         const categoriaEscolhida = categorias.find((item) => item.titulo === values.categoria);
+
+        if (values.titulo === '' || values.url === '' || categoriaEscolhida.id === '') {
+          setOpenSnackBar(true);
+          return;
+        }
+
         videosRepository.create({
           titulo: values.titulo,
           url: values.url,
@@ -66,6 +74,7 @@ function CadastroVideo() {
           Cadastrar
         </Button>
       </form>
+      <SnackBar open={openSnackBar} atClose={() => setOpenSnackBar(false)} />
     </PageDefault>
   );
 }

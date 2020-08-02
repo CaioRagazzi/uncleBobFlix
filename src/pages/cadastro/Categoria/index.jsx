@@ -1,20 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableCell from '@material-ui/core/TableCell';
-import { makeStyles } from '@material-ui/core/styles';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
+import MaterialTable from 'material-table';
 import useForm from '../../../hooks/useForm';
 import Button from '../../../components/Button';
 import FormField from '../../../components/FormField';
 import PageDefault from '../../../components/PageDefault';
+import SnackBar from '../../../components/SnackBar';
 import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroCategoria() {
+  const [openSnackBar, setOpenSnackBar] = useState(false);
   const valoresIniciais = {
     nome: '',
     descricao: '',
@@ -39,15 +34,6 @@ function CadastroCategoria() {
       });
   }, []);
 
-  const useStyles = makeStyles({
-    table: {
-      minWidth: 650,
-      backgroundColor: '#53585D',
-    },
-  });
-
-  const classes = useStyles();
-
   return (
     <PageDefault>
       <h1>
@@ -57,6 +43,11 @@ function CadastroCategoria() {
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
         infosDoEvento.preventDefault();
+
+        if (values.titulo === '' || values.url === '' || values.cor === '') {
+          setOpenSnackBar(true);
+          return;
+        }
 
         categoriasRepository.create({
           titulo: values.nome,
@@ -98,38 +89,27 @@ function CadastroCategoria() {
         </Button>
       </form>
 
-      {categorias.length === 0 && (
-        <div>
-          Loading...
-        </div>
-      )}
-
-      <TableContainer component={Paper} style={{ marginBottom: '20px', marginTop: '20px' }}>
-        <Table className={classes.table} aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell>Nome</TableCell>
-              <TableCell align="center">Descrição</TableCell>
-              <TableCell align="center">Cor</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {categorias.map((row) => (
-              <TableRow key={row.titulo}>
-                <TableCell component="th" scope="row">
-                  {row.titulo}
-                </TableCell>
-                <TableCell align="center">{row.descricao}</TableCell>
-                <TableCell align="center">{row.cor}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+      <MaterialTable
+        options={{
+          search: false,
+          paging: false,
+          showTitle: false,
+          headerStyle: { backgroundColor: '#53585D', color: 'white', fontWeight: 'normal' },
+          padding: 'default',
+        }}
+        isLoading={categorias.length === 0}
+        style={{
+          marginBottom: '20px', marginTop: '20px', paddingTop: '0px', backgroundColor: '#53585D',
+        }}
+        columns={[{ title: 'Nome', field: 'titulo' }, { title: 'Descrição', field: 'descricao' }, { title: 'Cor', field: 'cor' }]}
+        data={categorias}
+      />
 
       <Link to="/">
         Ir para home
       </Link>
+
+      <SnackBar open={openSnackBar} atClose={() => setOpenSnackBar(false)} />
     </PageDefault>
   );
 }
