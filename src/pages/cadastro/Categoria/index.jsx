@@ -22,11 +22,12 @@ function CadastroCategoria() {
 
   useEffect(() => {
     const URL_TOP = window.location.hostname.includes('localhost')
-    ? 'http://localhost:8080'
-    : 'https://bobflix.herokuapp.com';
+    ? 'http://localhost:8080/categorias'
+    : 'https://bobflix.herokuapp.com/categorias';
     fetch(URL_TOP)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
+        console.log(resposta);
         setCategorias([
           ...resposta,
         ]);
