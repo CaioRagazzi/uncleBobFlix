@@ -5,7 +5,7 @@ import Logo from '../../assets/img/Logo.png';
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://www.alura.com.br/">
+      <a href="https://www.caioragazzi.com">
         <img className="Logo" src={Logo} alt="Logo Header" />
       </a>
       <p>
